@@ -1,0 +1,12 @@
+char c;
+unsigned char uc;
+short s;
+unsigned short us;
+int i;
+unsigned u;
+long l;
+unsigned long ul;
+float f;
+double d;
+long double ld;
+const int ci;
