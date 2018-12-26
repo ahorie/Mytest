@@ -1,16 +1,19 @@
 #include <stdio.h>
-#include <float.h>
-#include <limits.h>
 
 int main()
 {
-	unsigned long long ullmax = ULLONG_MAX;
-	long lmax = LONG_MAX;
-	long double ldmax = LDBL_MAX;
+	int x;
+	int n = 10;
+	int z;
 
-	printf("The max value of an unsigned long long is %Lu.\n", ullmax);
-	printf("The max value of a long is %ld.\n", lmax);
-	printf("The max value of a long double is %Lf.\n", ldmax);
+	n++;
+	++n;
+
+	x = n++;
+	z = ++n;
+
+	printf("x is %i.\n", x);
+	printf("z is %i.\n", z);
 
 	return 0;
 }
