@@ -1,19 +1,14 @@
 #include <stdio.h>
 
 int main()
-{
-	int x;
-	int n = 10;
-	int z;
+{	
+	char February;
+	printf("If this year is leap year, enter 1.  "
+			"If not, enter any integer: ");
+	scanf("%c", &February);
 
-	n++;
-	++n;
-
-	x = n++;
-	z = ++n;
-
-	printf("x is %i.\n", x);
-	printf("z is %i.\n", z);
+	int days = (February == '1') ? 29 : 28;
+	printf("Number of days in February = %d\n", days);
 
 	return 0;
 }
