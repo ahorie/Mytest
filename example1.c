@@ -1,20 +1,15 @@
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
-	char c;
-	printf("Enter an alphabet: ");
-	scanf("%c", &c);
+	int currentYear;
+	printf("What is the current year?");
+	scanf("%d", &currentYear);
 
-	int isLowerCaseVowel, isUpperCaseVowel;
-
-	isLowerCaseVowel = (c == 'a' | c = 'e' | c = 'i' | c = 'o' | c = 'u') ? 1 : 0;
-	isUpperCaseVowel = (c == 'A' | c = 'E' | c = 'I' | c = 'O' | c = 'U') ? 1 : 0;
-
-	if (isLowerCaseVowel + isUpperCaseVowel == 1)
-		printf("The character is a vowel");
-	else
-		printf("The character is a consonant");
+	if (currentYear % 400 == 0)
+	}
+		printf("%d is a leap year.\n", currentYear);
 
 	return 0;
 }
